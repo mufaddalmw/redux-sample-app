@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import {fetchWeather} from '../actions/index'
+import PlacesAutocomplete from 'react-places-autocomplete'
+import { geocodeByAddress, geocodeByPlaceId, getLatLng } from 'react-places-autocomplete'
 
 class SearchBar extends Component {
     constructor(props){
